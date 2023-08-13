@@ -1,0 +1,59 @@
+.btn {
+    &-gradient , &-transparent , &-onlyBorder {
+        padding: 12px 0;
+        display: inline-flex;
+        background: $gradient;
+        font-family: 'DM Sans', sans-serif;
+        color: #fff;
+        font-size: $font-16;
+        line-height: $font-16;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    &-gradient , &-onlyBorder {
+        padding: 12px 24px;
+    }
+    &-transparent , &-onlyBorder {
+        background: none;
+    }
+    &-gradient:hover {
+        transform: scale(1.05);
+        border-radius: 15px;
+    }
+    &-onlyBorder {
+        background: none;
+        padding: 0;
+    }
+    &-intro {
+        padding: 16px 32px;
+        font-weight: 500;
+        height: 53px;
+        display: inline-block;
+    }
+    &-toggle {
+        display: inline-flex;
+        width: 40px;
+        height: 52px;
+        border: 0.5px solid rgba(255, 255, 255, 0.28);
+        backdrop-filter: blur(2px);
+        background: none;
+        transition: all 0.25s;
+        color: #FFF;
+        justify-content: center;
+        align-items: center;
+    }
+    &-toggle:hover {
+        border: 1px solid #FFF;
+    }
+    &-view {
+        font-size: $font-18;
+        transition: all 0.25s;
+        border-bottom: 1px solid transparent;
+        cursor: pointer;
+    }
+    &-view:hover {
+        border-bottom: 1px solid #fff;
+    }
+}
+

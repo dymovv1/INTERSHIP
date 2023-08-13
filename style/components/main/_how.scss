@@ -1,0 +1,40 @@
+.how {
+    padding-top: 136px;
+    &-card {
+        background-image: url('../../../assets/img/border_box.svg');
+        padding: 32px 36px 32px 32px;
+    }
+    &-cards {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    &-title {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 20px;
+    }
+    &-text {
+        line-height: 25.6px;
+        width: 386px;
+        margin-bottom: 32px;
+    }
+    &-card__img {
+        padding: 14px;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(2px);
+        display: inline-block;
+        margin-bottom: 24px;
+    }
+    &-card__title {
+        font-size: $font-24;
+        line-height: 27px;
+    }
+    &-card__text {
+        font-size: $font-14;
+        max-width: 288px;
+        line-height: 21px;
+    }
+}

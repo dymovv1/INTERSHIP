@@ -1,0 +1,36 @@
+.footer {
+    padding-bottom: 92px;
+    &-column {
+        flex-direction: column;
+    }
+    &-column__gap {
+        gap: 16px;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    &-body {
+        display: flex;
+        justify-content:space-between ;
+    }
+    &-newsletter__text {
+        max-width: 314px;
+        margin-bottom: 32px;
+    }
+    &-newsletter__card {
+        width: 36px;
+        height: 36px;
+        border-radius: 4px;
+        background: $gradient;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+    &-newsletter__card:hover {
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px 2px #fff;
+    }
+    &-newsletter__social {
+        gap: 20px;
+    }
+}

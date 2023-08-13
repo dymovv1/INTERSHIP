@@ -1,0 +1,54 @@
+.collection {
+    padding-top: 136px;
+    &-title {
+        font-size: $font-56;
+        line-height: 62px;
+        margin-bottom: 12px;
+    }
+    &-cards {
+        display: flex;
+        gap: 24px;
+    }
+    &-card {
+        padding: 20px 20px 25px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.21);
+        backdrop-filter: blur(2px);
+        display: inline-block;
+    }
+    &-card__images {
+        gap: 12px;
+        margin-bottom: 22px;
+    }
+    &-card__mainImg1::after {
+        content: url('../../../assets/img/art_item_logo.svg');
+        position: absolute;
+        top: 52%;
+        left: 40%;
+    }
+    &-card__mainImg2::after {
+        content: url('../../../assets/img/cubic_logo.svg');
+        position: absolute;
+        top: 52%;
+        left: 40%;
+    }
+    &-card__mainImg3::after {
+        content: url('../../../assets/img/diamond_logo.svg');
+        position: absolute;
+        top: 52%;
+        left: 40%;
+    }
+    &-card__mainImg4::after {
+        content: url('../../../assets/img/morgan11_logo.svg');
+        position: absolute;
+        top: 52%;
+        left: 40%;
+    }
+    &-card__btn {
+        padding: 8px 18px;
+    }
+    &-card__text {
+        color: #fff;
+        font-size: $font-18;
+        font-weight: 600;
+    }
+}

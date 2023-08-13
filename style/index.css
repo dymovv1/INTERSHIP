@@ -1,0 +1,626 @@
+@charset "UTF-8";
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* dm-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/dm-sans-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* dm-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../assets/fonts/dm-sans-v14-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* dm-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../assets/fonts/dm-sans-v14-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/open-sans-v35-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../assets/fonts/open-sans-v35-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../assets/fonts/open-sans-v35-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../assets/fonts/open-sans-v35-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ruda-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/ruda-v23-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ruda-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../assets/fonts/ruda-v23-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ruda-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../assets/fonts/ruda-v23-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ruda-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../assets/fonts/ruda-v23-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ruda-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../assets/fonts/ruda-v23-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.pb-128 {
+  padding-bottom: 128px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a, ul, li {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background: #110229;
+  color: #fff;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+p, span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #DEDEDE;
+}
+
+.header {
+  padding-bottom: 112px;
+}
+.header-nav {
+  gap: 48px;
+  padding: 0;
+  margin: 0;
+}
+.header-buttons {
+  gap: 24px;
+}
+.header-nav__item {
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+.header-nav__item:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.btn-gradient, .btn-transparent, .btn-onlyBorder {
+  padding: 12px 0;
+  display: inline-flex;
+  background: linear-gradient(138deg, #6477DD 0%, #C753C1 52.29%, #DC1DC3 100%);
+  font-family: "DM Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-gradient, .btn-onlyBorder {
+  padding: 12px 24px;
+}
+.btn-transparent, .btn-onlyBorder {
+  background: none;
+}
+.btn-gradient:hover {
+  transform: scale(1.05);
+  border-radius: 15px;
+}
+.btn-onlyBorder {
+  background: none;
+  padding: 0;
+}
+.btn-intro {
+  padding: 16px 32px;
+  font-weight: 500;
+  height: 53px;
+  display: inline-block;
+}
+.btn-toggle {
+  display: inline-flex;
+  width: 40px;
+  height: 52px;
+  border: 0.5px solid rgba(255, 255, 255, 0.28);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  background: none;
+  transition: all 0.25s;
+  color: #FFF;
+  justify-content: center;
+  align-items: center;
+}
+.btn-toggle:hover {
+  border: 1px solid #FFF;
+}
+.btn-view {
+  font-size: 18px;
+  transition: all 0.25s;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-view:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.intro {
+  background-image: url("../../../assets/img/intro_bg.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.intro-title {
+  font-size: 64px;
+  font-family: 700;
+  max-width: 450px;
+}
+.intro-text {
+  line-height: 24px;
+  max-width: 526px;
+  margin-bottom: 40px;
+}
+.intro-buttons {
+  gap: 26px;
+  margin-bottom: 67px;
+}
+.intro-statistics__card {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.intro-statistics__number {
+  color: #FFF;
+  font-family: "Ruda", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.intro-statistics {
+  gap: 70px;
+}
+
+.partners {
+  display: flex;
+  gap: 81px;
+}
+
+.how {
+  padding-top: 136px;
+}
+.how-card {
+  background-image: url("../../../assets/img/border_box.svg");
+  padding: 32px 36px 32px 32px;
+}
+.how-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.how-title {
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+.how-text {
+  line-height: 25.6px;
+  width: 386px;
+  margin-bottom: 32px;
+}
+.how-card__img {
+  padding: 14px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.how-card__title {
+  font-size: 24px;
+  line-height: 27px;
+}
+.how-card__text {
+  font-size: 14px;
+  max-width: 288px;
+  line-height: 21px;
+}
+
+.trening {
+  padding-top: 136px;
+}
+.trening-title {
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 12px;
+}
+.trening-body {
+  overflow: hidden;
+}
+.trening-text {
+  line-height: 24.8px;
+  max-width: 526px;
+}
+.trening-block__text {
+  margin-bottom: 104px;
+}
+.trening-btn__toggles {
+  display: inline-flex;
+  gap: 24px;
+}
+.trening-cards {
+  min-height: 569px;
+  display: flex;
+  gap: 20px;
+  width: 100vw;
+}
+.trening-card {
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  transition: all 0.3s;
+}
+.trening-card:hover {
+  border: 1px solid #FFF;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.trening-card__title {
+  font-size: 18px;
+}
+.trening-card__nickname {
+  font-size: 14px;
+}
+.trening-card__hover {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  display: none;
+}
+.trening-card__images {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.trening-card__img {
+  width: 336px;
+  height: 383px;
+}
+.trening-card__button {
+  padding: 12px 0;
+  border: 1px solid transparent;
+  width: 336px;
+  color: #222;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: ease-out 0.3s;
+  display: none;
+  margin-top: 20px;
+  opacity: 0;
+}
+.trening-card__button:hover {
+  background: rgb(140, 237, 162);
+  color: #fff;
+  font-weight: 700;
+}
+
+.trening-card__hover,
+.trening-card__img,
+.trening-card__button {
+  transition: all 0.5s ease-in-out;
+}
+
+.trening-card:hover .trening-card__hover {
+  display: flex;
+  opacity: 1;
+}
+
+.trening-card:hover .trening-card__img {
+  width: 252px;
+  height: 334px;
+  opacity: 1;
+}
+
+.trening-card:hover .trening-card__button {
+  display: block;
+  opacity: 1;
+}
+
+.card-timePrice__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.card-timePrice__text {
+  font-size: 14px;
+}
+
+.topSeller {
+  padding-top: 136px;
+}
+.topSeller-cards, .topSeller-card {
+  gap: 24px;
+}
+.topSeller-card {
+  padding: 24px 130px 24px 40px;
+  background: linear-gradient(138deg, #6477DD 0%, #C753C1 52.29%, #DC1DC3 100%);
+  min-width: 469px;
+}
+.topSeller-cards {
+  animation: slideIn 45s linear infinite;
+  margin-bottom: 26px;
+}
+.topSeller-cards__left {
+  animation: slideInLeft 50s linear infinite;
+}
+.topSeller-body {
+  overflow: hidden;
+}
+.topSeller-title {
+  font-size: 48px;
+  line-height: 56px;
+}
+.topSeller-card__text {
+  font-size: 18px;
+}
+.topSeller-card__img {
+  width: 112px;
+  height: 112px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Випливає зліва */
+  }
+  100% {
+    transform: translateX(100%); /* Рухається вправо */
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(100%); /* Випливає справа */
+  }
+  100% {
+    transform: translateX(-100%); /* Рухається вліво */
+  }
+}
+.collection {
+  padding-top: 136px;
+}
+.collection-title {
+  font-size: 56px;
+  line-height: 62px;
+  margin-bottom: 12px;
+}
+.collection-cards {
+  display: flex;
+  gap: 24px;
+}
+.collection-card {
+  padding: 20px 20px 25px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: inline-block;
+}
+.collection-card__images {
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.collection-card__mainImg1::after {
+  content: url("../../../assets/img/art_item_logo.svg");
+  position: absolute;
+  top: 52%;
+  left: 40%;
+}
+.collection-card__mainImg2::after {
+  content: url("../../../assets/img/cubic_logo.svg");
+  position: absolute;
+  top: 52%;
+  left: 40%;
+}
+.collection-card__mainImg3::after {
+  content: url("../../../assets/img/diamond_logo.svg");
+  position: absolute;
+  top: 52%;
+  left: 40%;
+}
+.collection-card__mainImg4::after {
+  content: url("../../../assets/img/morgan11_logo.svg");
+  position: absolute;
+  top: 52%;
+  left: 40%;
+}
+.collection-card__btn {
+  padding: 8px 18px;
+}
+.collection-card__text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subscribe {
+  padding-top: 148px;
+}
+.subscribe-body {
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  padding: 68px 24px 38px 48px;
+  justify-content: space-between;
+  max-width: 1056px;
+}
+.subscribe-title {
+  font-size: 42px;
+  line-height: 53px;
+  margin-bottom: 20px;
+}
+.subscribe-text {
+  line-height: 24px;
+  margin-bottom: 40px;
+  max-width: 594px;
+}
+.subscribe-input {
+  padding: 17px 238px 17px 24px;
+  background: rgba(255, 255, 255, 0.2);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border: 0;
+  outline: none;
+  color: #FFF;
+  max-height: 56px;
+}
+.subscribe-btn {
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  height: 56px;
+  width: 149px;
+  display: inline-flex;
+  align-items: center;
+}
+.subscribe-btn:hover {
+  border-radius: 0;
+}
+.subscribe-img {
+  margin-top: -100px;
+}
+
+::-moz-placeholder {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+::placeholder {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer {
+  padding-bottom: 92px;
+}
+.footer-column {
+  flex-direction: column;
+}
+.footer-column__gap {
+  gap: 16px;
+  display: inline-flex;
+  flex-direction: column;
+}
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-newsletter__text {
+  max-width: 314px;
+  margin-bottom: 32px;
+}
+.footer-newsletter__card {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  background: linear-gradient(138deg, #6477DD 0%, #C753C1 52.29%, #DC1DC3 100%);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.footer-newsletter__card:hover {
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 2px #fff;
+}
+.footer-newsletter__social {
+  gap: 20px;
+}/*# sourceMappingURL=index.css.map */

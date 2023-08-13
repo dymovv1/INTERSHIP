@@ -1,0 +1,53 @@
+.topSeller {
+    padding-top: 136px;
+    &-cards , &-card {
+        gap: 24px;
+    }
+    &-card {
+        padding: 24px 130px 24px 40px;
+        background: $gradient;
+        min-width: 469px;
+    }
+    &-cards {
+        animation: slideIn 45s linear infinite;
+        margin-bottom: 26px;
+    }
+    &-cards__left {
+        animation: slideInLeft 50s linear infinite;
+    }
+    &-body{
+        overflow: hidden;
+    }
+    &-title {
+        font-size: $font-48;
+        line-height: 56px;
+    }
+    &-card__text {
+        font-size: $font-18;
+    }
+    &-card__img{
+        width: 112px;
+        height: 112px;
+    }
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Випливає зліва */
+    }
+    100% {
+        transform: translateX(100%); /* Рухається вправо */
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(100%); /* Випливає справа */
+    }
+    100% {
+        transform: translateX(-100%); /* Рухається вліво */
+    }
+}
