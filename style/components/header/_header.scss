@@ -91,6 +91,8 @@
             flex-direction: column;
             background: #6A76DB;
             border-radius: 10px;
+            height: 90dvh;
+            transition: height 0.3s ;
         }
         &-logo {
             display: flex;
