@@ -5,7 +5,7 @@ Short description or tagline for your project.
 ## Table of Contents
 
 - [Description](#description)
-- [Link(#link)
+- [Link](#link)
 - [Technologies Used](#technologies-used)
 
 ## Description
