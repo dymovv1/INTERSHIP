@@ -343,7 +343,7 @@ p, span {
 }
 
 .intro {
-  background-image: url("../../../assets/img/intro_bg.jpg");
+  background-image: url("../assets/img/intro_bg.jpg");
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -385,7 +385,7 @@ p, span {
 
 @media screen and (max-width: 996px) {
   .intro {
-    background-image: url("../../../assets/img/intro_bg_mobile.jpg");
+    background-image: url("../assets/img/intro_bg_mobile.jpg");
     background-position: center;
     background-size: cover;
   }
