@@ -34,3 +34,17 @@
         gap: 20px;
     }
 }
+@media screen and (max-width: 776px){
+    .footer {
+        &-body {
+            flex-direction: column-reverse;
+            gap: 25px;
+            align-items: center;
+            text-align: center;
+        }
+        &-newsletter__social {
+            justify-content: center;
+        }
+    }
+    
+}

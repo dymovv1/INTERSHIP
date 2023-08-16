@@ -10,6 +10,9 @@
         font-family: 700;
         max-width: 450px;
     }
+    &-info {
+        display: block;
+    }
     &-text {
         line-height: 24px;
         max-width: 526px;
@@ -35,4 +38,39 @@
         gap: 70px;
     }
 
+}
+
+@media screen and (max-width: 996px){
+    .intro {
+        background-image: url('../../../assets/img/intro_bg_mobile.jpg');
+        background-position: center;
+        background-size: cover;
+        &-title, &-text {
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 12px;
+            max-width: 350px;
+        }
+        &-title {
+            font-size: 40px;
+        }
+        &-text {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .intro {
+        &-statistics {
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
 }

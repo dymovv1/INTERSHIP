@@ -23,13 +23,14 @@
         min-height: 569px;
         display: flex;
         gap: 20px;
-        width: 100vw;
     }
     &-card {
         padding: 24px;
         border: 1px solid rgba(255, 255, 255, 0.28);
         backdrop-filter: blur(2px);
         transition: all 0.3s;
+        min-width: 385px;
+        max-height: 562px;
     }
     &-card:hover {
         border: 1px solid #FFF;
@@ -105,5 +106,26 @@
     }
     &-timePrice__text {
         font-size: $font-14;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .trening {
+        &-block__text {
+            margin-bottom: 40px;
+            flex-direction: column;
+            align-items: center !important;
+            text-align: center;
+            gap: 20px;
+        }
+        &-card {
+            padding: 16px;
+            min-width: 300px;
+        }
+        &-card__button {
+            max-width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }

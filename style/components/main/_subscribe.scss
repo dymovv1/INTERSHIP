@@ -50,3 +50,26 @@
     font-size: $font-16;
     font-weight: 400;
 }
+
+@media screen and (max-width: 776px){
+    .subscribe {
+        padding-top: 70px;
+        &-body {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 15px;
+        }
+        &-img {
+            margin: 0 auto;
+        }
+        &-block__input {
+            flex-direction: column;
+            gap: 10px;
+        }
+        &-input {
+            padding-right: 50px;
+        }
+    }
+    
+}

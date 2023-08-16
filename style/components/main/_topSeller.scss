@@ -36,18 +36,30 @@
 
 @keyframes slideIn {
     0% {
-        transform: translateX(-100%); /* Випливає зліва */
+        transform: translateX(-100%); 
     }
     100% {
-        transform: translateX(100%); /* Рухається вправо */
+        transform: translateX(100%); 
     }
 }
 
 @keyframes slideInLeft {
     0% {
-        transform: translateX(100%); /* Випливає справа */
+        transform: translateX(100%); 
     }
     100% {
-        transform: translateX(-100%); /* Рухається вліво */
+        transform: translateX(-100%); 
+    }
+}
+
+@media screen and (max-width: 776px){
+    .topSeller {
+        &-cards {
+            animation: slideIn 11s linear infinite;
+            margin-bottom: 26px;
+        }
+        &-cards__left {
+            animation: slideInLeft 20s linear infinite;
+        }
     }
 }

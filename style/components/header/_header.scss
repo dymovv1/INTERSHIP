@@ -16,4 +16,108 @@
     &-nav__item:hover {
         border-bottom: 1px solid #fff;
     }
+ 
+}
+
+.burger {
+    &-menu {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        width: 42px;
+        height: 42px;
+        opacity: 50%;
+        border-radius: 25px;
+        transition: linear 0.3s;
+        justify-content: center;
+        align-items: center;
+    }
+    &-wrapper {
+        display: none;
+        width: 100%;
+        justify-content: end;
+    }
+    &-menu:hover {
+        opacity: 1;
+        border-radius: 50px;
+        border: 1px solid #fff;
+    }
+    &-line {
+        display: block;
+        width: 25px;
+        height: 2.5px;
+        background-color: #fff;
+        transition: linear 0.3s;
+        opacity: 1;
+        border-radius: 15px;
+
+    }
+    &-line.is-active {
+        height: 3px;
+        width: 3px;
+        border-radius: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .header {
+        padding-bottom: 70px;
+        &-nav  {
+            display: none !important;
+        }
+        &-buttons {
+            display: none !important;
+        }
+        &-nav.is-active {
+            display: flex !important;
+            flex-direction: column;
+            gap: 35px;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 40px;
+            animation: slideInFromBottom 0.3s ease-out forwards;
+
+        }
+        &-buttons.is-active {
+            display: flex !important;
+            gap: 100px;
+            animation: slideInFromBottom 0.3s ease-out forwards;
+
+        }
+        &-body.is-active {
+            flex-direction: column;
+            background: #6A76DB;
+            border-radius: 10px;
+        }
+        &-logo {
+            display: flex;
+            justify-content: space-between;
+            width: -webkit-fill-available;
+        }
+        &-body {
+            padding: 10px;
+        }
+    }
+    .burger {
+        &-menu {
+            display: flex;
+        }
+        &-wrapper {
+            display: flex;
+        }
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

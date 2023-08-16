@@ -38,3 +38,23 @@
         line-height: 21px;
     }
 }
+
+@media screen and (max-width: 1150px){
+    .how {
+        &-body {
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        &-cards {
+            justify-content: center;
+        }
+        &-info {
+            margin: 0 auto;
+            text-align: center;
+        }
+        &-text {
+            width: auto;
+        }
+    }
+    
+}

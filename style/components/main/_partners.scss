@@ -2,3 +2,9 @@
     display: flex;
     gap: 81px;
 }
+@media screen and (max-width: 776px){
+  .partners {
+    flex-wrap: wrap;
+    justify-content: center;
+  }  
+}
