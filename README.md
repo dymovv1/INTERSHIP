@@ -1,6 +1,6 @@
 # NFTs
 
-Short description or tagline for your project.
+Just Do It
 
 ## Table of Contents
 
