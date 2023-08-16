@@ -43,6 +43,41 @@
         justify-content: center;
         align-items: center;
     }
+    &-up {
+        display: inline-flex;
+        border: none;
+        outline: none;
+        width: 42px;
+        height: 42px;
+        background: $gradient;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &-up::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        animation: ripple 1.5s linear infinite;
+    }
+    &-up__img {
+        width: 27px;
+        height: 27px;
+        transition: transform 0.3s ease-in-out;
+    }
+    &-up--postion {
+        position: fixed;
+        top: auto;
+        bottom: 5%;
+        left: auto;
+        right: 5%;
+        z-index: 10;
+    }
+    
     &-toggle:hover {
         border: 1px solid #FFF;
     }
@@ -57,3 +92,14 @@
     }
 }
 
+.btn-up:hover .btn-up__img {
+    transform: scale(1.2); 
+}
+
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}

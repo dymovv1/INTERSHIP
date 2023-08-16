@@ -329,6 +329,40 @@ p, span {
   justify-content: center;
   align-items: center;
 }
+.btn-up {
+  display: inline-flex;
+  border: none;
+  outline: none;
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(138deg, #6477DD 0%, #C753C1 52.29%, #DC1DC3 100%);
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-up::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: ripple 1.5s linear infinite;
+}
+.btn-up__img {
+  width: 27px;
+  height: 27px;
+  transition: transform 0.3s ease-in-out;
+}
+.btn-up--postion {
+  position: fixed;
+  top: auto;
+  bottom: 5%;
+  left: auto;
+  right: 5%;
+  z-index: 10;
+}
 .btn-toggle:hover {
   border: 1px solid #FFF;
 }
@@ -342,6 +376,16 @@ p, span {
   border-bottom: 1px solid #fff;
 }
 
+.btn-up:hover .btn-up__img {
+  transform: scale(1.2);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
 .intro {
   background-image: url("../assets/img/intro_bg.jpg");
   width: 100%;
@@ -429,7 +473,7 @@ p, span {
   padding-top: 136px;
 }
 .how-card {
-  background-image: url("../../../assets/img/border_box.svg");
+  background-image: url("../assets/img/border_box.svg");
   padding: 32px 36px 32px 32px;
 }
 .how-cards {

@@ -86,6 +86,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// btn-up 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const btnUp = document.querySelector('.btn-up');
+
+    btnUp.addEventListener('click', () => {
+        smoothScrollToTop();
+    });
+
+    function smoothScrollToTop() {
+        const startPosition = window.pageYOffset;
+        const duration = 1000; 
+        const startTime = performance.now();
+
+        function animation(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const scrollProgress = Math.min(elapsedTime / duration, 1);
+            const easedProgress = easeInOutCubic(scrollProgress);
+            window.scrollTo(0, startPosition * (1 - easedProgress));
+
+            if (scrollProgress < 1) {
+                requestAnimationFrame(animation);
+            }
+        }
+
+        function easeInOutCubic(t) {
+            return t < 0.5
+                ? 4 * t * t * t
+                : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        }
+
+        requestAnimationFrame(animation);
+    }
+});
 
 
 
