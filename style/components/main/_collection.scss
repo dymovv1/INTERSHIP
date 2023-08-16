@@ -21,25 +21,25 @@
     }
     &-card__mainImg1::after {
         content: url('../assets/img/art_item_logo.svg');
-        position: absolute;
+        position: fixed;
         top: 52%;
         left: 40%;
     }
     &-card__mainImg2::after {
         content: url('../assets/img/cubic_logo.svg');
-        position: absolute;
+        position: fixed;
         top: 52%;
         left: 40%;
     }
     &-card__mainImg3::after {
         content: url('../assets/img/diamond_logo.svg');
-        position: absolute;
+        position: fixed;
         top: 52%;
         left: 40%;
     }
     &-card__mainImg4::after {
         content: url('../assets/img/morgan11_logo.svg');
-        position: absolute;
+        position: fixed;
         top: 52%;
         left: 40%;
     }
